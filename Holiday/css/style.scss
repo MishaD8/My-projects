@@ -1,0 +1,13 @@
+
+
+.block{
+    padding: 30px;
+    font-size: 50px;
+    line-height: 60px;
+    .block__text{
+        font-size: 80px;
+        span{
+            color: green;
+        }
+    }
+}
