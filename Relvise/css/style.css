@@ -141,6 +141,40 @@ body {
 .page__main-block {
     
 }
+
+.page__advantages {
+}
+.page__practice {
+}
+/* -------------------------header-block--------------------------------------------------- */
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
+    
+}
+.header-block__title {
+    font-size: 40px;
+    line-height: 142%;
+    font-weight: 700;
+}
+.header-block__title:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.header-block__sub-title {
+    color: #737373;
+    line-height: 142%;
+}
+@media (max-width: 992px) {
+    header-block__title {
+        font-size: 35px;
+    }
+}
+@media (max-width: 767px) {
+    header-block__title {
+        font-size: 30px;
+    }
+}
+/* -------------------------main-block--------------------------------------------------- */
 .main-block {
     position: relative;
 }
@@ -159,6 +193,11 @@ body {
 @media (max-width: 992px) {
     .main-block__body {
         padding: 120px 0px 191px 0px;
+    }
+}
+@media (max-width: 479px) {
+    .main-block__body {
+        padding: 115px 0px 160px 0px;
     }
 }
 .main-block__body > *:not(:last-child) {
@@ -247,6 +286,7 @@ body {
 /* --------------------------services-------------------------------------------------- */
 
 .services {
+    
 }
 .services__container {
 }
@@ -324,7 +364,173 @@ body {
     line-height: 142%;
 }
 
+/* ----------------------advantages------------------------------------------------------ */
 
+.advantages {
+    padding: 80px 0;
+}
+@media (max-width: 992px) {
+    .advantages {
+        padding: 30px 0;
+    }
+}
+.advantages__container {
+}
+.container {
+}
+.advantages__header {
+    margin: 0px 0px 50px 0px;
+}
+@media (max-width: 767px) {
+    .advantages__header {
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+.advantages__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px;
+}
+.advantages__column {
+    padding: 0px 15px;
+    margin: 0px 0px 30px 0px;
+    flex: 0 1 25%;
+}
+@media (max-width: 1020px) {
+    .advantages__column {
+        flex: 0 1 50%;
+    }
+}
+@media (max-width: 560px) {
+    .advantages__column {
+        flex: 0 1 100%;
+    }
+}
+.advantages__item {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.advantages__item > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.advantages__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.advantages__value {
+    font-size: 40px;
+    line-height: 142%;
+    font-weight: 700;
+
+}
+.advantages__text {
+    
+    letter-spacing: 0.1px;
+    color: #737373;
+    font-size: 16px;
+    line-height: 150%;
+}
+/* -------------------------practice advice--------------------------------------------------- */
+
+.practice {
+    padding: 125px 0px 80px 0px;
+}
+@media (max-width: 993px) {
+    .practice {
+        padding: 40px 0px 80px 0px;
+    }
+}
+@media (max-width: 767px) {
+    .practice {
+        padding: 0px 0px 40px 0px;
+    }
+}
+.practice__container {
+}
+.container {
+}
+.practice__header {
+    margin: 0px 0px 45px 0px;
+}
+@media (max-width: 767px) {
+    .practice__header {
+        margin: 0px 0px 25px 0px;
+    }
+}
+.header-block {
+}
+.header-block__title {
+}
+.header-block__sub-title {
+}
+.practice__body {
+    margin: 0px -20px -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.practice__column {
+    padding: 0px 20px;
+    margin: 0px 0px 30px 0px;
+    flex: 0 1 25%;
+}
+@media (max-width: 1040px) {
+    .practice__column {
+        padding: 0px 20px;
+        flex: 0 1 50%;
+    }
+}
+@media (max-width: 630px) {
+    .practice__column {
+        padding: 0px 20px;
+        flex: 0 1 100%;
+    }
+}
+.practice__item {
+    
+}
+
+.item-practice {
+    background-color: #fff;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.item-practice__content {
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
+.item-practice__link {
+    color: inherit;
+    display: inline-block;
+}
+.item-practice__link:hover {
+    text-decoration: underline;
+}
+.item-practice__link:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+}
+.item-practice__title {
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+.item-practice__text {
+    color: #737373;
+    line-height: 142%;
+}
+.item-practice__image {
+    padding: 0px 0px 60% 0px;
+    display: block;
+}
+._ibg {
+}
 /* -------footer--------------------------------------------------------------------- */
 .footer{
 
