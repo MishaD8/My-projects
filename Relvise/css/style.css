@@ -119,6 +119,9 @@ body {
     line-height: 171%;
     font-weight: 600;
 }
+.menu__link:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 479px){
     .menu__link {
@@ -250,7 +253,9 @@ body {
     line-height: 150%;
     padding: 5px 36px;
     margin: 10px 0;
+    transition: all 0.3s ease 0s;
 }
+
 @media (max-width: 479px) {
     .main-block__button {
         flex: 1 1 100%;
@@ -266,11 +271,18 @@ body {
     background: #ff7b47;
     color: #fff;
 }
+.main-block__button_orange:hover {
+    background-color: #fff;
+    color: #ff7b47
+}
 .main-block__button_border {
     color: #0d5c63;
     border: 1px solid #0d5c63;
 }
-
+.main-block__button_border:hover {
+    background-color: #0d5c63;
+    color: #fff;
+}
 .main-block__image {
     position: absolute;
     width: 100%;
@@ -812,9 +824,14 @@ body {
     min-height: 58px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     text-align: center;
     color: #fff;
+    transition: all 0.3s ease 0s;
     padding: 0px 22px;
+}
+.subscribe__button:hover {
+    background: #8f3f1f;
 }
 @media (min-width: 810px){
     .subscribe__button {
@@ -1012,7 +1029,7 @@ body {
 }
 .footer__top {
     background: #17213c;
-    padding: 50px 0;
+    padding: 35px 0;
 }
 .footer__main {
 }
@@ -1027,7 +1044,22 @@ body {
 .footer__column {
     padding: 15px 15px;
     flex: 0 1 16.6667%;
-    
+}
+.footer__column:last-child {
+    flex: 0 1 33.334%;
+}
+@media (max-width: 992px){
+    .footer__column {
+        flex: 0 1 25%;
+    }
+    .footer__column:last-child {
+        flex: 1 1 100%;
+    }
+}
+@media (max-width: 992px){
+    .footer__column {
+        flex: 0 1 50%;
+    }
 }
 .footer__label {
     color: #fff;
@@ -1069,7 +1101,7 @@ body {
     line-height: 142%;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: #ffffff;   
     min-height: 30px;
 }
 .contacts-footer__item:not(:last-child) {
@@ -1087,15 +1119,13 @@ body {
 .footer__bottom {
     padding: 25px 0;
 }
-
-
-@media (min-width: 767px) {
-    .footer__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 .footer__copy {
     color: #737373;
     line-height: 171%;
@@ -1108,4 +1138,14 @@ body {
 }
 .social__item:not(:last-child) {
     margin: 0px 20px 0px 0px;
+}
+
+@media (min-width: 767px) {
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__copy {
+        margin: 0px 0px 15px 0px;
+        text-align: center;
+    }
 }
