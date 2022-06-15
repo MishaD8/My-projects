@@ -322,7 +322,7 @@ li {
 
 .item {
     display: grid;
-}
+}    
 .item__image {
     text-align: center;
 }
